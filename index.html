@@ -1,0 +1,301 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ваш сайт с улучшениями: семантика, стили и взаимодействие">
+    <title>Пример сайта</title>
+    <style>
+        /* Основные стили */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f0f4f8, #d9e2ec); /* Мягкий градиент */
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #2d3b55; /* Темно-синий */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #1a2536; /* Темная граница снизу */
+        }
+        header h1, header p {
+            color: white; /* Белый цвет для заголовка и параграфа в header */
+        }
+        nav {
+            background-color: #34495e; /* Синий оттенок */
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Легкая тень для блока */
+            border-radius: 8px;
+        }
+        h1, h2 {
+            font-size: 26px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #2d3b55;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            font-size: 14px;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 12px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+            background-color: #f8f9fa; /* Светлый фон для ввода */
+        }
+        .form-container button {
+            padding: 12px 20px;
+            background-color: #2d3b55; /* Темно-синий */
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        .form-container button:hover {
+            background-color: #34495e; /* Более темный синий при наведении */
+        }
+        /* Анимация для кнопки */
+        @keyframes pulse {
+            0% { background-color: #2d3b55; }
+            50% { background-color: #34495e; }
+            100% { background-color: #2d3b55; }
+        }
+        .pulse-button {
+            animation: pulse 1.5s infinite;
+        }
+        /* Стили для изображений */
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        ul {
+            margin-left: 20px;
+            font-size: 16px;
+            color: #555;
+        }
+        .service-item {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать на наш сайт!</h1>
+        <p>Здесь мы применяем лучшие практики веб-разработки.</p>
+    </header>
+    <nav>
+        <a href="#home">Главная</a>
+        <a href="#about">О нас</a>
+        <a href="#contact">Контакты</a>
+    </nav>
+    <section id="home">
+        <h2>Наши достижения</h2>
+        <p>Мы всегда стремимся к улучшению и применению самых современных технологий на сайте.</p>
+        <p>Наши сотрудники обладают высоким уровнем квалификации и всегда готовы предложить лучшие решения для ваших нужд.</p>
+        <!-- Замените URL картинки на свой -->
+        <div class="image-container">
+            <img src="https://timeweb.com/ru/community/article/10/10bd40f4ead41ef70bf717fc8e8f9699.jpg"
+        <h3>Наши ключевые достижения:</h3>
+        <ul>
+            <li class="service-item">100+ успешных проектов для различных бизнесов</li>
+            <li class="service-item">Использование новейших технологий для создания высококачественных сайтов</li>
+            <li class="service-item">Большой опыт работы с международными клиентами</li>
+            <li class="service-item">Постоянное совершенствование наших услуг</li>
+        </ul>
+    </section>
+    <section id="about">
+        <h2>О нас</h2>
+        <p>Мы — команда профессионалов, специализирующихся на разработке веб-сайтов и улучшении пользовательского опыта. Наша миссия — создавать уникальные и эффективные онлайн-решения для вашего бизнеса.</p>
+        <h3>Наши ценности:</h3>
+        <ul>
+            <li class="service-item">Инновационный подход</li>
+            <li class="service-item">Ответственность за результат</li>
+            <li class="service-item">Прозрачность в коммуникации</li>
+            <li class="service-item">Постоянное совершенствование</li>
+        </ul>
+        <!-- Замените URL картинки на свой -->
+        <div class="image-container">
+            <img src="https://kartinki.pics/uploads/posts/2022-03/thumbs/1646516416_43-kartinkin-net-p-programmirovanie-kartinki-dlya-prezentatsi-48.jpg"
+        </section>
+    <section id="contact">
+        <h2>Свяжитесь с нами</h2>
+        <p>Если у вас есть вопросы или предложения, заполните форму ниже, и мы обязательно свяжемся с вами!(Но это не точно)</p>
+        <h3>Наши контактные данные:</h3>
+        <p>Адрес: ул. B777OP05, д. 777, офис 1000-7, Москва, Россия</p>
+        <a href="https://maps.app.goo.gl/WHWmaePyb5XmsZqZ9">Наш офис</a>
+        <p>Телефон: <a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+        <p>Email: <a href="mailto:arikvldmrv@gmail.com">arikvldmrv@gmail.com</a></p> 
+        <p>Telegram: <a href="mailto:@GMM_242">@GMM_242</a></p>       
+        <div class="form-container">
+            <form id="contactForm" action="#">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Введите ваше сообщение" required></textarea>
+                <button type="submit" class="pulse-button">Отправить</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Ваш сайт. Все права защищены.</p>
+    </footer>
+    <script>
+        // Добавляем обработку формы (для демонстрации)
+        const form = document.getElementById('contactForm');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Спасибо за ваше сообщение! Мы свяжемся с вами в ближайшее время.');
+            form.reset(); // Очищаем форму
+        });
+    </script>
+</body>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Всплывающее сообщение с Telegram</title>
+    <style>
+        /* Стили для фона страницы */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+
+        /* Стили для всплывающего окна */
+        .popup {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #2d3b55;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: none;
+            font-size: 16px;
+            z-index: 9999;
+        }
+
+        /* Кнопка закрытия */
+        .popup .close-btn {
+            background-color: #ff4757;
+            color: white;
+            border: none;
+            padding: 8px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 16px;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+        }
+
+        .popup .close-btn:hover {
+            background-color: #ff6b81;
+        }
+
+        /* Кнопка для показа popup */
+        .show-popup-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: #2d3b55;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .show-popup-btn:hover {
+            background-color: #34495e;
+        }
+
+        /* Стили для ссылки в окне */
+        .popup a {
+            color: #ffdd57;
+            text-decoration: none;
+        }
+
+        .popup a:hover {
+            text-decoration: underline;
+        }
+
+        /* Скрытый чекбокс для управления видимостью окна */
+        #popup-toggle {
+            display: none;
+        }
+
+        /* Когда чекбокс активен, показывается всплывающее окно */
+        #popup-toggle:checked + .popup {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Скрытый чекбокс для управления всплывающим окном -->
+    <input type="checkbox" id="popup-toggle">
+    
+    <!-- Кнопка для показа всплывающего окна -->
+    <label for="popup-toggle" class="show-popup-btn">Напишите мне в Telegram</label>
+
+    <!-- Всплывающее сообщение -->
+    <div class="popup">
+        <label for="popup-toggle" class="close-btn">×</label>
+        <p>Привет! Напишите мне в Telegram: <a href="https://t.me/GMM_242" target="_blank">@GMM_242</a></p>
+    </div>
+
+</body>
+
+</html>
